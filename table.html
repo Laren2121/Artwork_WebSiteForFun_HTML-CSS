@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Abstract Art</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/table.css">
+	<link rel="icon" type="img/ico" href="images/icon.png">
+</head>
+
+<body>
+
+  <header>
+  	<img src="images/scream.jpg" alt="Scream art" width="55">
+   	<h2>Abstract Art</h2>
+   	<h3>Welcome to the world of abstract works</h3>
+  </header>
+  <nav id="nav_menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Artists</a>
+              <ul>
+                  <li><a href="https://www.google.com/search?q=Wassily+Kandinsky+abstract+painting&stick=H4sIAAAAAAAAAOOQU-LQz9U3sDA1q4qSSEwqLilKTC5RKEjMzCvJzEtXSCwqySwuOcUIVwRlmpgaGpxi5AQxDc2qylOgbGNDs4L0R4y-3AIvf9wTlnKZtObkNUY7Lq7w1CTHvOLy1KJiIQMursDS1KJK55zE4mIhJS4BKR4fz-CQ-GBXV29PP3cNRik-LhQRnl-MMo7JyflFKSAHleQr5Fbm5qekFuXlppboJefn_mKSinf1C_EMiYxXwPDAJGbNjJKSgmIrfX00bfowtboQPxbrL2JVDge6KTOnUsE7MQ9oW3F2JaaJACpqY8EyAQAA&sa=X&ved=2ahUKEwjYofmTpKDmAhVnnuAKHc2TAf8QxA0wAHoECAsQBQ&biw=1696&bih=829">Wassily</a></li>
+                  <li><a href="https://www.google.com/search?sa=X&q=Joan+Mir%C3%B3&stick=H4sIAAAAAAAAAONgFuLQz9U3sDA1q1ICs9LjzbK1-AJSi4rz84IzU1LLEyuLF7FyeeUn5in4ZhYd3gwAf6hcUDMAAAA&ved=2ahUKEwiiqdWVpKDmAhWJT98KHUYdD8wQxA0wKHoECA4QSg&biw=1696&bih=829">Jackson</a></li>
+                      <ul>
+                          <li><a href="">History</a></li>
+                          <li><a href="">paintings</a></li>
+                          <li><a href="">Awards</a></li>
+                      </ul>
+                  <li><a href="https://www.google.com/search?sa=X&q=Joan+Mir%C3%B3&stick=H4sIAAAAAAAAAONgFuLQz9U3sDA1q1ICs9LjzbK1-AJSi4rz84IzU1LLEyuLF7FyeeUn5in4ZhYd3gwAf6hcUDMAAAA&ved=2ahUKEwiiqdWVpKDmAhWJT98KHUYdD8wQxA0wKHoECA4QSg&biw=1696&bih=829">Mark</a></li>
+                  <li><a href="https://www.google.com/search?sa=X&q=Joan+Mir%C3%B3&stick=H4sIAAAAAAAAAONgFuLQz9U3sDA1q1ICs9LjzbK1-AJSi4rz84IzU1LLEyuLF7FyeeUn5in4ZhYd3gwAf6hcUDMAAAA&ved=2ahUKEwiiqdWVpKDmAhWJT98KHUYdD8wQxA0wKHoECA4QSg&biw=1696&bih=829">Paul</a></li>
+              </ul>
+          </li>
+          <li><a href="images.html">Images</a></li>
+		  <li><a href="table.html">Order</a></li>
+      </ul>
+    </nav>
+  <main>
+
+        <aside class="asideLeft">
+                <nav id="nav_list">
+                   <ul>
+                    <li><a href="index.html"><img src="images/art1.jpg"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="images.html"><img src="images/art2.jpg"></a></li>
+                    <li><a href="images.html">Images</a></li>
+                    <li><a href="table.html"><img src="images/art3.jpg"></a></li>
+                    <li><a href="table.html">Order</a></li>
+                    <li><a href="https://learnodo-newtonic.com/famous-abstract-artists"><img src="images/art4.jpg"></a></li>
+                    <li><a href="https://learnodo-newtonic.com/famous-abstract-artists">Artists</a></li>
+                </ul>
+                </nav>
+            </aside>
+    <section>
+			<br><br>
+			<h2>Please Enter Details:</h2><br>
+            <form id="e_form" action="subscribe.html" method="POST">
+                <table>
+                    <tr>
+                        <td><label>First Name:</label></td>
+                        <td><input type="text" name="txtFname" size='45' required="Must have name" autofocus></td>
+                    </tr>
+                    <tr>
+                        <td><label>Last Name:</label></td>
+                        <td><input type="text" name="txtLname" size='45' required="Must have name"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="lblEmail">Email:</label> </td>
+                        <td><input type="email" name="txtEmail" size='45' required="Must have email"></td>
+                    </tr>
+                    <tr>
+                        <td><label id="lblZip">Zip Code:</label> </td>
+                        <td><input type="text" name="txtName" size='45' 
+                            pattern="\d{5}" title="Must be 99999">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label id="lblAmnt">Amount:</label></td>
+                        <td><input type="text" name="txtPrice" size='45' 
+                            placeholder="$0" pattern="\d{1:3}" title="Must be 99999">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Pay" class="btnSubscribe"> 
+                        </td>
+                    </table>
+                </form>
+    </section>
+    <aside class="asideRight">
+            <h3>Fun Facts</h3>
+            <ul>
+                <li>Most of the artists lived in The Big Apple and gathered at a tavern in Greenwich Village. 
+                    Some were venerable European painters who fled war or sought asylum in the city.</li>
+                 <li>Many Abstract Expressionists met through a project of painting murals in government buildings.
+                     Others were students of German abstraction guru Hans Hoffman.</li> 
+                <li>Due to the chaos in Europe and the migration of many artists, 
+                     New York overtook Paris as the heart of modern art.</li>
+                <li>They looked to Sigmund Freud for theories on dream symbolism, mythology, and primitivism.</li>
+                <li>After the incident, the artists were photographed and featured on Life magazine. Life is art and we seek to paint our own life. </li>
+		    </ul>
+		<br><p id="emailid">Mail to <a href="mailto:name@gmail.com">art@gmail.com</a>
+        </aside>
+  </main>
+  <footer>
+	<p>&copy; Laren Mark D'Cruz</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+html {
+	background-image: url("../images/background.jpg");	
+}
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 1000px;
+	height: auto;
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header { 
+    /* background-image: -webkit-linear-gradient(45deg, white 0%, orange 75%, black 100%); */
+    padding: 15px;
+} 
+header img { 
+	float: left; 
+	padding-right: 15px;  
+} 
+header h2 {
+	font-size: 330%;
+	font-style: italic;
+	font-family: b
+}
+header h3 {
+	font-size: 165%;
+	font-family: inherit;
+	font-style: italic;
+	padding-bottom: 15px;
+}
+
+
+/* Navigation menu */
+#nav_menu {
+	clear: left;
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	width: 250px;
+	padding: .7em 0;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+}
+#nav_menu ul li a.current {
+	color: orange;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: rgb(58, 104, 190);
+}
+
+/* Sidebar left*/
+/* New modification */
+.asideLeft {
+	float: left; 
+	width: 20%;
+	padding: 10px;
+	border: 1px solid gray;
+}
+#nav_list ul { 
+	list-style: none;
+}
+#nav_list ul li { 
+	width: 110px;
+	margin-bottom: .5em;
+ }
+
+#nav_list ul li img {
+	display: block;
+	max-width: 100%;
+	color: black;
+}
+/* SideBar right */
+.asideRight{
+	float: right;
+	width: 25%;
+	padding:15px;
+	border: 1px solid gray;
+}
+/* Section */
+section {
+	width: 45%;
+	font-style: inherit;
+	float: left;
+	padding: 20px;
+}
+section h1 { 
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+section tr td img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Footer */
+footer { 
+	clear: both;
+	border-top: 2px solid black;
+	padding: 15px;
+    background-image: -webkit-linear-gradient(45deg, black 0%, rgb(21, 8, 212) 25%, white 100%);
+} 
+footer p {
+	font-size: 90%;
+    text-align: right;
+    padding-right: 30px;
+}
+
+table tr td img{
+    padding: 5%;
+	padding-right: 30px;
+    overflow: visible;
+    /* position: relative; */
+	width: 200px;
+	height: 200px;
+	transition: transform .2s;
+}
+table tr td img:hover{
+	transform: scale(1.5);
+}
